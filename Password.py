@@ -26,7 +26,7 @@ except:
 def verif_mdp(mdp):
     
     while True:
-        lettre_en_miniscule = 0
+        lettre_en_majuscule = 0
         lettre_en_miniscule = 0
         caractere_numérique = 0
         chiffres = 0
@@ -36,7 +36,7 @@ def verif_mdp(mdp):
 #majuscule 
             for x in string.ascii_uppercase:
                 if x in mdp :
-                    lettre_en_miniscule += 1   
+                    lettre_en_majuscule += 1   
 #minuscule 
             for i in string.ascii_lowercase:
                 if i in mdp :
@@ -50,7 +50,7 @@ def verif_mdp(mdp):
                 if z in mdp :
                     caractere_numérique += 1            
 #gestion de la reussite 🎉🎉🎉
-            if lettre_en_miniscule > 0 and lettre_en_miniscule > 0 and caractere_numérique > 0 and chiffres > 0:
+            if lettre_en_majuscule > 0 and lettre_en_miniscule > 0 and caractere_numérique > 0 and chiffres > 0:
                 return "Valide"
 #gestion erreur caractere manquant         
             else:
